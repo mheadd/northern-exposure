@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Find nearby restaurants with favorable inspection scores in Anchorage, AK">
+    <title>Northern Exposure</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.7/cerulean/bootstrap.min.css" rel="stylesheet" integrity="sha384-zF4BRsG/fLiTGfR9QL82DrilZxrwgY/+du4p/c7J72zZj+FLYq4zY00RylP9ZjiT" crossorigin="anonymous">
+    <link href="css/style.css" rel="stylesheet"/>
+  </head>
+
+  <body role="document">
+
+    <!-- Fixed navbar -->
+    <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">Northern Exposure</a>
+        </div>
+        <div class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">
+            <li><a href="#about">About</a></li>
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </div>
+
+    <div class="init center">
+      <div class="well">Accessing your location</div>
+    </div>
+
+    <div class="error center hide">
+      <div class="well">Error: could not access your location.</div>
+    </div>
+
+    <div class="container theme-showcase hide" role="main">
+
+      <div class="page-header center">
+        <p class="lead">Find restaurants with favorable health inspection scores</p>
+      </div>
+      <div class="row center">
+        <div class="col-sm-12">
+          <div class="panel panel-default">
+            <div class="panel-heading">
+              <h3 class="panel-title">Distance from where you are</h3>
+            </div>
+            <div class="panel-body">
+              <div class="btn-group" role="group" aria-label="...">
+                <button type="button" class="btn btn-default custom">1/4 mile</button>
+                <button type="button" class="btn btn-default custom">1/2 mile</button>
+                <button type="button" class="btn btn-default custom">1 mile</button>
+              </div>
+            </div>
+          </div>
+          <div class="panel panel-default">
+            <div class="panel-heading">
+              <h3 class="panel-title">Number of restaurants to find</h3>
+            </div>
+            <div class="panel-body">
+              <div class="btn-group" role="group" aria-label="...">
+                <button type="button" class="btn btn-default custom">5</button>
+                <button type="button" class="btn btn-default custom">15</button>
+                <button type="button" class="btn btn-default custom">25</button>
+              </div>
+            </div>
+          </div>
+        </div><!-- /.col-sm-12 -->
+        <button type="button" class="btn btn-primary center">Search</button>
+      </div>
+
+    </div> <!-- /container -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <script src="js/app.js"></script>
+  </body>
+</html>
