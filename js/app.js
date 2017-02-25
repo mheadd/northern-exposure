@@ -2,7 +2,6 @@ $(document).ready(function() {
 
     // Get users current location.
     if ('geolocation' in navigator) {
-        //coordinates = [61.1411015233,-149.8392599984];
         navigator.geolocation.getCurrentPosition(function(position) {
             $('.init').addClass('hide');
             $('.container').removeClass('hide');
