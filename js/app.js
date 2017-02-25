@@ -7,9 +7,11 @@ $(document).ready(function() {
             $('.container').removeClass('hide');
             coordinates = [position.coords.latitude, position.coords.longitude];
         }, function(error) {
-          $('.init').addClass('hide');
-          $('.error').removeClass('hide');
-        }, {timeout: 8000});
+            $('.init').addClass('hide');
+            $('.error').removeClass('hide');
+        }, {
+            timeout: 8000
+        });
     }
     // Otherwise, show error message.
     else {
