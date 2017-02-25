@@ -6,7 +6,10 @@ $(document).ready(function() {
             $('.init').addClass('hide');
             $('.container').removeClass('hide');
             coordinates = [position.coords.latitude, position.coords.longitude];
-        });
+        }, function(error) {
+          $('.init').addClass('hide');
+          $('.error').removeClass('hide');
+        }, {timeout: 8000});
     }
     // Otherwise, show error message.
     else {
