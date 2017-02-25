@@ -27,7 +27,7 @@
         </div>
         <div class="navbar-collapse collapse">
           <ul class="nav navbar-nav">
-            <li><a href="#about">About</a></li>
+            <li><a href="https://github.com/mheadd/northern-exposure#northern-exposure">About</a></li>
           </ul>
         </div><!--/.nav-collapse -->
       </div>
@@ -44,7 +44,7 @@
     <div class="container theme-showcase hide" role="main">
 
       <div class="page-header center">
-        <p class="lead">Find restaurants with favorable health inspection scores</p>
+        <h2>Clean Restaurants Nearby</hs>
       </div>
       <div class="row center">
         <div class="col-sm-12">
@@ -53,10 +53,10 @@
               <h3 class="panel-title">Distance from where you are</h3>
             </div>
             <div class="panel-body">
-              <div class="btn-group" role="group" aria-label="...">
-                <button type="button" class="btn btn-default custom">1/4 mile</button>
-                <button type="button" class="btn btn-default custom">1/2 mile</button>
-                <button type="button" class="btn btn-default custom">1 mile</button>
+              <div class="btn-group" role="group" id="distance">
+                <button type="button" data-distance=".25" class="btn btn-default custom">1/4 mile</button>
+                <button type="button" data-distance=".5" class="btn btn-default custom">1/2 mile</button>
+                <button type="button" data-distance="1" class="btn btn-default custom">1 mile</button>
               </div>
             </div>
           </div>
@@ -65,20 +65,23 @@
               <h3 class="panel-title">Number of restaurants to find</h3>
             </div>
             <div class="panel-body">
-              <div class="btn-group" role="group" aria-label="...">
-                <button type="button" class="btn btn-default custom">5</button>
-                <button type="button" class="btn btn-default custom">15</button>
-                <button type="button" class="btn btn-default custom">25</button>
+              <div class="btn-group" role="group" id="number">
+                <button type="button" data-number="5" class="btn btn-default custom">5</button>
+                <button type="button" data-number="15" class="btn btn-default custom">15</button>
+                <button type="button" data-number="25" class="btn btn-default custom">25</button>
               </div>
             </div>
           </div>
         </div><!-- /.col-sm-12 -->
-        <button type="button" class="btn btn-primary center">Search</button>
+        <button type="button" id="search" class="btn btn-primary center">Search</button>
       </div>
+      <div id="results"></div>
 
     </div> <!-- /container -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.6/handlebars.min.js"></script>
     <script src="js/app.js"></script>
+    <script src="js/templates.js"></script>
   </body>
 </html>

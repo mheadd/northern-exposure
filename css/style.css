@@ -1,12 +1,23 @@
 body {
-  padding-top: 75px;
+    padding-top: 40px;
 }
+
+.well {
+    margin-top: 6 5px;
+}
+
+#results {
+    padding-top: 20px;
+}
+
 .center {
-  text-align: center;
+    text-align: center;
 }
+
 .custom {
     width: 75px !important;
 }
+
 .hide {
-	display: none;
+    display: none;
 }

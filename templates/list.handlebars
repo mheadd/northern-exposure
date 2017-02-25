@@ -1,0 +1,22 @@
+{{#if Places.places}}
+    <table class="table table-striped table-bordered table-hover center">
+        <thead>
+            <tr>
+                <th class="center">Name</th>
+                <th class="center">Address</th>
+                <th class="center">Average Score</th>
+            </tr>
+        </thead>
+        <tbody>
+            {{#each Places.places}}
+                <tr>
+                    <td class="col-xs-4"><a title="view recent inspections" target="_blank" href="{{business_id}}">{{business_name}}</a></td>
+                    <td class="col-xs-4"><a title="Opens in Google Maps" target="_blank" href="https://www.google.com/maps/place/{{business_address}},Anchorage,AK">{{business_address}}</a></td>
+                    <td class="col-xs-4">{{{formatScore AVG_inspection_score}}}</td>
+                </tr>
+            {{/each}}
+        </tbody>
+    </table>
+{{else}}
+    <div class="alert alert-danger center" role="alert">No results found</div>
+{{/if}}
