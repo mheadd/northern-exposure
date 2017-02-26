@@ -10,7 +10,7 @@ Worried about exposing yourself to unsanitary conditions while dining out in Anc
 
 ## Usage
 
-If changes are made, precompile the template for listing locations thusly:
+If changes are made, [precompile](http://handlebarsjs.com/precompilation.html) the template for listing locations thusly:
 
 ```
 ~$ handlebars templates/* -f js/templates.js
