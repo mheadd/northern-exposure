@@ -10,8 +10,8 @@
         <tbody>
             {{#each Places.places}}
                 <tr>
-                    <td class="col-xs-4"><a title="view recent inspections" target="_blank" href="{{business_id}}">{{business_name}}</a></td>
-                    <td class="col-xs-4"><a title="Opens in Google Maps" target="_blank" href="https://www.google.com/maps/place/{{business_address}},Anchorage,AK">{{business_address}}</a></td>
+                    <td class="col-xs-4"><a title="View recent inspections" target="_blank" href="{{business_id}}">{{business_name}}</a></td>
+                    <td class="col-xs-4"><a title="Open in Google Maps" target="_blank" href="https://www.google.com/maps/place/{{business_address}},Anchorage,AK">{{business_address}}</a></td>
                     <td class="col-xs-4">{{{formatScore AVG_inspection_score}}}</td>
                 </tr>
             {{/each}}

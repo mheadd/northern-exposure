@@ -10,6 +10,12 @@ Worried about exposing yourself to unsanitary conditions while dining out in Anc
 
 ## Usage
 
+If changes are made, precompile the template for listing locations thusly:
+
+```
+~$ handlebars templates/* -f js/templates.js
+```
+
 This app is designed to work with your location, and if you're not currently located in Anchorage you won't find nearby restaurants.
 
 To check this app out in the lower 48 states (or elsewhere), you can set a custom location in Chrome that makes your browser _think_ you are in Anchorage.
