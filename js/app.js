@@ -77,8 +77,11 @@ function clearContents() {
 function getPlaceList(url, callback) {
     $.ajax({
         url: url,
-        complete: function(xhr) {
-            callback.call(null, xhr.responseJSON);
+        success: function(data, status) {
+            callback.call(null, data);
+        },
+        error: function() {
+            callback.call(null, []);
         }
     });
 }

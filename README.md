@@ -24,3 +24,5 @@ To check this app out in the lower 48 states (or elsewhere), you can set a custo
 * Go to the console tab, and press `esc` to open the console drawer
 * Select `Sensors` and in the `Geolocation` section select `custom location` from the drop down menu
 * Enter in a [latitude and longitude for Anchorage, AK](http://www.latlong.net/).
+* Refresh the browser window displaying the app.
+* Enjoy!
